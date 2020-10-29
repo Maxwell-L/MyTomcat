@@ -1,6 +1,7 @@
 package com.maxwell.mytomcat;
 
 import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.thread.ThreadUtil;
 import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
@@ -8,6 +9,7 @@ import cn.hutool.system.SystemUtil;
 import com.maxwell.mytomcat.http.Request;
 import com.maxwell.mytomcat.http.Response;
 import com.maxwell.mytomcat.util.Constant;
+import com.maxwell.mytomcat.util.ThreadPoolUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,34 +33,48 @@ public class Bootstrap {
 
             while(true) {
                 Socket s = ss.accept();
-                Request request = new Request(s);
-                String requestString = request.getRequestString();
-                System.out.println("浏览器的输入信息： \r\n" + requestString);
 
-                Response response = new Response();
-                // 获取URI
-                String uri = request.getUri();
-                if(uri == null) {
-                    continue;
-                }
-                if(Objects.equals(uri, "/")) {
-                    String html = "Hello DIY Tomcat from Maxwell-L";
-                    response.getPrintWriter().println(html);
-                } else {
-                    String fileName = StrUtil.removePrefix(uri, "/");
-                    File file = FileUtil.file(Constant.rootFolder, fileName);
-                    if(file.exists()) {
-                        String fileContent = FileUtil.readUtf8String(file);
-                        response.getPrintWriter().println(fileContent);
-                    } else {
-                        response.getPrintWriter().println("File Not Found");
+                Runnable r = new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            Request request = new Request(s);
+                            String requestString = request.getRequestString();
+                            System.out.println("浏览器的输入信息： \r\n" + requestString);
+
+                            Response response = new Response();
+                            // 获取URI
+                            String uri = request.getUri();
+                            if(uri == null) {
+                                return;
+                            }
+                            if(Objects.equals(uri, "/")) {
+                                String html = "Hello DIY Tomcat from Maxwell-L";
+                                response.getPrintWriter().println(html);
+                            } else {
+                                String fileName = StrUtil.removePrefix(uri, "/");
+                                File file = FileUtil.file(Constant.rootFolder, fileName);
+                                if(file.exists()) {
+                                    String fileContent = FileUtil.readUtf8String(file);
+                                    response.getPrintWriter().println(fileContent);
+
+                                    if(fileName.equals("timeConsume.html")) {
+                                        ThreadUtil.sleep(1000);
+                                    }
+                                } else {
+                                    response.getPrintWriter().println("File Not Found");
+                                }
+                            }
+                            handle200(s, response);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
-                }
-                handle200(s, response);
+                };
+                ThreadPoolUtil.run(r);
             }
         } catch (IOException e) {
-            LogFactory.get().error(e);
-            e.printStackTrace();
+
         }
 
     }
