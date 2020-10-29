@@ -3,12 +3,101 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d9ce4d1-508f-43ea-bacd-7432f010454b" name="Default Changelist" comment="" />
+    <list default="true" id="4d9ce4d1-508f-43ea-bacd-7432f010454b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/androidTest/java/com/example/androidapplication/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/ui/dashboard/DashboardFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/ui/dashboard/DashboardViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/ui/home/HomeFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/ui/home/HomeViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/ui/notifications/NotificationsFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/java/com/example/androidapplication/ui/notifications/NotificationsViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/drawable/ic_home_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/drawable/ic_notifications_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/layout/fragment_notifications.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/app/src/test/java/com/example/androidapplication/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AndroidApplication/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/hutool-all-4.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jsoup-1.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jspc_all.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-4.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/servlet-api.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxwell/mytomcat/Bootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxwell/mytomcat/http/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxwell/mytomcat/http/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxwell/mytomcat/test/TestTomcat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxwell/mytomcat/util/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxwell/mytomcat/util/MiniBrowser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webapps/ROOT/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../linux-0.11/.idea/linux-0.11.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Jdk-Src/Jdk-Src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Jdk-Src/Jdk-Src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyTomcat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyTomcat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -21,22 +110,142 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1jX9KpmZaXWqpc6ZdhGFWQ4szD6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
+  <component name="RunManager" selected="Application.MiniBrowser">
+    <configuration name="Bootstrap" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.maxwell.mytomcat.Bootstrap" />
+      <module name="MyTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maxwell.mytomcat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MiniBrowser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.maxwell.mytomcat.util.MiniBrowser" />
+      <module name="MyTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maxwell.mytomcat.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTomcat.testHelloHtml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maxwell.mytomcat.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maxwell.mytomcat.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maxwell.mytomcat.test.TestTomcat" />
+      <option name="METHOD_NAME" value="testHelloHtml" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTomcat.testHelloTomcat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyTomcat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maxwell.mytomcat.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maxwell.mytomcat.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maxwell.mytomcat.test.TestTomcat" />
+      <option name="METHOD_NAME" value="testHelloTomcat" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Bootstrap" />
+      <item itemvalue="JUnit.TestTomcat.testHelloTomcat" />
+      <item itemvalue="JUnit.TestTomcat.testHelloHtml" />
+      <item itemvalue="Application.MiniBrowser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MiniBrowser" />
+        <item itemvalue="JUnit.TestTomcat.testHelloHtml" />
+        <item itemvalue="JUnit.TestTomcat.testHelloTomcat" />
+        <item itemvalue="Application.Bootstrap" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="4d9ce4d1-508f-43ea-bacd-7432f010454b" name="Default Changelist" comment="" />
       <created>1603939507470</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603939507470</updated>
+      <workItem from="1603939511556" duration="254000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603939767423">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603939767423" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1603939518059">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603939518059" />
   </component>
 </project>
