@@ -1,16 +1,20 @@
 package com.maxwell.mytomcat.http;
 
 import cn.hutool.core.util.StrUtil;
+import com.maxwell.mytomcat.Bootstrap;
+import com.maxwell.mytomcat.catalina.Context;
 import com.maxwell.mytomcat.util.MiniBrowser;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
+import java.util.Objects;
 
 public class Request {
     private String requestString;
     private String uri;
     private Socket socket;
+    private Context context;
 
     public Request(Socket socket) throws IOException {
         this.socket = socket;
@@ -19,6 +23,10 @@ public class Request {
             return;
         }
         parseUri();
+        parseContext();
+        if(!Objects.equals(context.getPath(), "/")) {
+            uri = StrUtil.removePrefix(uri, context.getPath());
+        }
     }
 
     private void parseHttpRequest() throws IOException {
@@ -39,11 +47,29 @@ public class Request {
         uri = temp;
     }
 
+    private void parseContext() {
+        String path = StrUtil.subBetween(uri, "/", "/");
+        if(path == null) {
+            path = "/";
+        } else {
+            path = "/" + path;
+        }
+
+        context = Bootstrap.contextMap.get(path);
+        if(context == null) {
+            context = Bootstrap.contextMap.get("/");
+        }
+    }
+
     public String getUri() {
         return uri;
     }
 
     public String getRequestString() {
         return requestString;
+    }
+
+    public Context getContext() {
+        return context;
     }
 }

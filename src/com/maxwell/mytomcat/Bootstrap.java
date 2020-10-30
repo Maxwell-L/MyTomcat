@@ -6,6 +6,7 @@ import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.LogFactory;
 import cn.hutool.system.SystemUtil;
+import com.maxwell.mytomcat.catalina.Context;
 import com.maxwell.mytomcat.http.Request;
 import com.maxwell.mytomcat.http.Response;
 import com.maxwell.mytomcat.util.Constant;
@@ -16,16 +17,21 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 public class Bootstrap {
+
+    /**
+     * 存放 路径 和 Context 的映射
+     */
+    public static Map<String, Context> contextMap = new HashMap<>();
+
     public static void main(String[] args) {
 
         try {
             logJVM();
+
+            scanContextsOnWebAppsFolder();
 
             int port = 18080;
 
@@ -34,49 +40,70 @@ public class Bootstrap {
             while(true) {
                 Socket s = ss.accept();
 
-                Runnable r = new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            Request request = new Request(s);
-                            String requestString = request.getRequestString();
-                            System.out.println("浏览器的输入信息： \r\n" + requestString);
+                Runnable r = () -> {
+                    try {
+                        Request request = new Request(s);
+                        Response response = new Response();
 
-                            Response response = new Response();
-                            // 获取URI
-                            String uri = request.getUri();
-                            if(uri == null) {
-                                return;
-                            }
-                            if(Objects.equals(uri, "/")) {
-                                String html = "Hello DIY Tomcat from Maxwell-L";
-                                response.getPrintWriter().println(html);
-                            } else {
-                                String fileName = StrUtil.removePrefix(uri, "/");
-                                File file = FileUtil.file(Constant.rootFolder, fileName);
-                                if(file.exists()) {
-                                    String fileContent = FileUtil.readUtf8String(file);
-                                    response.getPrintWriter().println(fileContent);
-
-                                    if(fileName.equals("timeConsume.html")) {
-                                        ThreadUtil.sleep(1000);
-                                    }
-                                } else {
-                                    response.getPrintWriter().println("File Not Found");
-                                }
-                            }
-                            handle200(s, response);
-                        } catch (IOException e) {
-                            e.printStackTrace();
+                        // 获取URI
+                        String uri = request.getUri();
+                        if(uri == null) {
+                            return;
                         }
+
+                        Context context = request.getContext();
+
+                        if(Objects.equals(uri, "/")) {
+                            String html = "Hello DIY Tomcat from Maxwell-L";
+                            response.getPrintWriter().println(html);
+                        } else {
+                            String fileName = StrUtil.removePrefix(uri, "/");
+                            File file = FileUtil.file(context.getDocBase(), fileName);
+                            if(file.exists()) {
+                                String fileContent = FileUtil.readUtf8String(file);
+                                response.getPrintWriter().println(fileContent);
+
+                                if(fileName.equals("timeConsume.html")) {
+                                    ThreadUtil.sleep(1000);
+                                }
+                            } else {
+                                response.getPrintWriter().println("File Not Found");
+                            }
+                        }
+                        handle200(s, response);
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
                 };
                 ThreadPoolUtil.run(r);
             }
         } catch (IOException e) {
+            LogFactory.get().error(e);
+            e.printStackTrace();
+        }
+    }
 
+    private static void scanContextsOnWebAppsFolder() {
+        File[] folders = Constant.webappsFolder.listFiles();
+        for(File folder : folders) {
+            if(!folder.isDirectory()) {
+                continue;
+            }
+            loadContext(folder);
+        }
+    }
+
+    private static void loadContext(File folder) {
+        String path = folder.getName();
+        if(Objects.equals(path, "ROOT")) {
+            path = "/";
+        } else {
+            path = "/" + path;
         }
 
+        String docBase = folder.getAbsolutePath();
+        Context context = new Context(path, docBase);
+        contextMap.put(context.getPath(), context);
     }
 
     private static void logJVM() {

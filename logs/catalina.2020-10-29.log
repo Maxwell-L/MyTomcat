@@ -1,0 +1,166 @@
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 10:49:18 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 10:49:33 上午 com.maxwell.mytomcat.Bootstrap error
+ERROR: Address already in use: JVM_Bind
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:102)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:513)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:180)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at com.maxwell.mytomcat.Bootstrap.main(Bootstrap.java:30)
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 10:49:41 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 10:50:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 10:52:34 上午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 15:15:17 下午 com.maxwell.mytomcat.Bootstrap error
+ERROR: Address already in use: JVM_Bind
+java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:102)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:513)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:180)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:128)
+	at com.maxwell.mytomcat.Bootstrap.main(Bootstrap.java:31)
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 15:15:25 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server version:		Maxwell-L Tomcat/1.0
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server built:		2020-10-28 12:00:00
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Server number:		1.1
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Name	:		Windows 10
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : OS Version:		10.0
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Architecture:		amd64
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : Java Home:		D:\lang\Java\jdk1.8.0_261\jre
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Version:		1.8.0_261-b12
+10 29, 2020 15:59:32 下午 com.maxwell.mytomcat.Bootstrap logJVM
+INFO : JVM Vendor:		Oracle Corporation
